@@ -1,5 +1,5 @@
 applications:
-  - name: tracker-allocations
+  - name: tracker-registration
     path: ./applications/allocations-server/build/libs/allocations-server.jar
     routes:
       - route: registrations-pal-srikar.cfapps.io

@@ -1,0 +1,12 @@
+applications:
+  - name: tracker-backlog
+    path: ./applications/allocations-server/build/libs/backlog-server.jar
+    routes:
+      - route: backlog-pal-srikar.cfapps.io
+    memory: 1G
+    instances: 1
+    env:
+      REGISTRATION_SERVER_ENDPOINT: http://registrations-pal-srikar.cfapps.io
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
+    services:
+      - tracker-backlog-database

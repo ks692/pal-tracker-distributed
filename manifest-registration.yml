@@ -1,6 +1,6 @@
 applications:
   - name: tracker-registration
-    path: ./applications/allocations-server/build/libs/allocations-server.jar
+    path: ./applications/allocations-server/build/libs/registration-server.jar
     routes:
       - route: registrations-pal-srikar.cfapps.io
     memory: 1G
